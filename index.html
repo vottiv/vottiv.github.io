@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание для Antida Frontend School</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="/assets/css/style.css" type="text/css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.scrollify.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/phonemask.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</head>
+<body>
+    <section class="panel" data-section-name="home">
+        <div class="container">
+            <div class="block-center">
+                <div class="person shadow">
+                    <div class="person_image">
+                        <a data-fancybox="gallery" href="/assets/images/big-image.png" data-caption="Это вот я и остров Хайнань. 2017 год">
+                            <img src="/assets/images/small-image.png">
+                        </a>
+                    </div>
+                    <h1 class="person__title">
+                        Привет, я Виталий Федотов
+                    </h1>
+                    <div class="person__line"></div>
+                    <div class="person__description">
+                        Занимаюсь веб-разработкой более 2-ух лет
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination">
+            <li><a href="#home" class="active"><span class="hover-text">Приветствие</span></a></li>
+            <li><a href="#job" class=""><span class="hover-text">Работа</span></a></li>
+            <li><a href="#slider"><span class="hover-text">Слайдер</span></a></li>
+            <li><a href="#validation"><span class="hover-text">Валидация</span></a></li>
+            <li><a href="#map"><span class="hover-text">Карта</span></a></li>
+            <li><a href="#exit"><span class="hover-text">Эпилог</span></a></li>
+        </ul>
+    </section>
+    <section class="panel" data-section-name="job">
+        <div class="container">
+            <div class="block-center">
+                <div class="work shadow">
+                    <h2 class="work__title">
+                        Кем успел поработать
+                    </h2>
+                    <div class="work__list">
+                        <div class="work__item">
+                            <div class="work__tab">Менеджер проекта</div>
+                            <div class="work__content">
+                                <ul>
+                                    <li>Переговоры с клиентом и выявление проблем</li>
+                                    <li>Выезд в офис и подписание документов</li>
+                                    <li>Составление списка задач для программиста (себя же)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__tab">Контент менеджер</div>
+                            <div class="work__content">
+                                <ul>
+                                    <li>Наполнение контентом</li>
+                                    <li>Ведение групп в Вконтакте</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__tab">Дизайнер</div>
+                            <div class="work__content">
+                                <ul>
+                                    <li>Создание оформления для группы в Вконтакте</li>
+                                    <li>Дизайн отдельных страниц на сайте</li>
+                                    <li>Реализация новых блоков в стилистике сайта</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__tab">SEO специалист</div>
+                            <div class="work__content">
+                                <ul>
+                                    <li>Составление семантического ядра</li>
+                                    <li>Ведение рекламных кампаний</li>
+                                    <li>Выявление рекомендаций для сайта с целью повышения места в поисковой выдаче</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work__item active">
+                            <div class="work__tab">Frontend разработчик</div>
+                            <div class="work__content" style="display: block;">
+                                <ul>
+                                    <li>Вёрстка десятка сайтов с нуля</li>
+                                    <li>Добавление блоков, страниц или элементов для сотни сайтов</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <div class="work__tab">Backend разработчик</div>
+                            <div class="work__content">
+                                <ul>
+                                    <li>Сборка более десятка сайтов на самописной CMS + менее десяти на Битриксе</li>
+                                    <li>Доработка функционала, написание модулей</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" data-section-name="slider">
+        <div class="container">
+            <div class="block-center">
+                <div class="info">
+                    <h2>Слайдер</h2>
+                    <p class="info__pretitle">использовал свои фотоработы</p>
+                </div>
+                <div class="slider-block shadow">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/1.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/2.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/3.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/4.JPG)"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/1.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/2.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/3.JPG)"></div>
+                            <div class="swiper-slide" style="background-image:url(/assets/images/photos/4.JPG)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" data-section-name="validation">
+        <div class="container">
+            <div class="block-center">
+                <div class="info">
+                    <h2>Валидация формы</h2>
+                </div>
+                <div class="form shadow">
+                    <form action="" method="post" novalidate>
+                        <h3 class="form__title">Форма отправки чего-то</h3>
+                        <div class="form__row">
+                            <input id="name" type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form__row">
+                            <input id="phone" type="text" placeholder="Телефон" required>
+                        </div>
+                        <div class="form__row">
+                            <input id="email" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form__row">
+                            <label>
+                                <input class="checkbox" type="checkbox" name="checkbox-test">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Отправляя заявку, вы принимаете условия пользовательского соглашения</span>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <button disabled>Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" data-section-name="map">
+        <div class="container">
+            <div class="block-center">
+                <div class="info">
+                    <h2>Карта</h2>
+                </div>
+                <div id="map" class="shadow"></div>
+            </div>
+        </div>
+    </section>
+    <section class="panel" data-section-name="exit">
+        <div class="container">
+            <div class="block-center">
+                <div class="contact shadow">
+                    <div class="contact_test">В тестовом использовал самые частые примеры функционала на сайте</div>
+                    <div class="contact__list">
+                        <a href="https://vk.com/vottiv/" class="contact__item" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="mailto:vottiv@gmail.com" class="contact__item" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://t.me/vottiv/" class="contact__item" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vottiv/" class="contact__item" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
